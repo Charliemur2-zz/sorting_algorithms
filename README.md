@@ -103,8 +103,8 @@ See the codes of different functions and programs.
 ---
 
 ## Team
-<a href="https://github.com/Cristiand187">'Cristiand187'</a><br>
-<a href="https://github.com/Charliemur2">`Charliemur2`</a>
+<a href="https://github.com/Cristiand187">Cristiand187</a><br>
+<a href="https://github.com/Charliemur2">`Charliemur2</a>
 ---
 
 ## Support
