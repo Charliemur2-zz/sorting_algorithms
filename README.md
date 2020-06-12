@@ -103,8 +103,8 @@ See the codes of different functions and programs.
 ---
 
 ## Team
-https://github.com/Cristiand187
-https://github.com/Charliemur2
+<a href="https://github.com/Cristiand187">'Cristiand187'</a><br>
+<a href="https://github.com/Charliemur2">`Charliemur2`</a>
 ---
 
 ## Support
@@ -112,9 +112,9 @@ https://github.com/Charliemur2
 Feel free to contact us!
 
 - GitHub at <a href="https://github.com/Charliemur2">`Charliemur2`</a>
-- GitHub at <a href="https://github.com/Cristiand187">`Cristiand187`</a>-
+- GitHub at <a href="https://github.com/Cristiand187">`Cristiand187`</a>
 - Twitter at <a href="https://twitter.com/charliesoka">`@charliesoka`</a>
-- Twitter at <a href="https://twitter.com/Cristiand187">`@charliesoka`</a>
+- Twitter at <a href="https://twitter.com/Cristiand187">`@Cristiand187`</a>
 
 ---
 
