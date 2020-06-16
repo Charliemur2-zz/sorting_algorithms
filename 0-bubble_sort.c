@@ -9,7 +9,7 @@ void bubble_sort(int *array, size_t size)
 	unsigned int swaps = 1, i;
 	int tmp;
 
-	if (array == NULL && size > 0)
+	if (array != NULL && size > 1)
 		while (swaps != 0)
 		{
 			swaps = 0;
