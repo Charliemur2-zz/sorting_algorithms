@@ -11,19 +11,22 @@ void shell_sort(int *array, size_t size)
 	unsigned int gap = 1, i = 0, j = 0;
 	int temp = 0;
 
-	gap = gap * 3 + 1;
-	while (gap > 0)
+	if (array != NULL && size > 1)
 	{
-		for (i = gap; i < size; i++)
+		gap = gap * 3 + 1;
+		while (gap > 0)
 		{
-			temp = array[i];
-			for (j = i; j >= gap && array[j - gap] > temp; j = j - gap)
+			for (i = gap; i < size; i++)
 			{
-				array[j] = array[j - gap];
+				temp = array[i];
+				for (j = i; j > gap - 1 && array[j - gap] > temp; j = j - gap)
+				{
+					array[j] = array[j - gap];
+				}
+				array[j] = temp;
 			}
-			array[j] = temp;
+			gap = (gap - 1) / 3;
+			print_array(array, size);
 		}
-		gap = (gap - 1) / 3;
-		print_array(array, size);
 	}
 }
