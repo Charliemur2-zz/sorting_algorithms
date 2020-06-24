@@ -10,7 +10,10 @@
  */
 void counting_sort(int *array, size_t size)
 {
-	int aux[size], i = 0, *count = NULL, max = 0;
+	int *aux, i = 0, *count = NULL, max = 0;
+
+	if (size == 0 || size == 1)
+		return;
 
 	max = array[0];
 	for (i = 1; i < (int)size; i++)
@@ -20,13 +23,12 @@ void counting_sort(int *array, size_t size)
 	}
 
 	max = max + 1;
-	count = malloc(sizeof(int) * (max + 1));
+	count = malloc(max * sizeof(int));
 	if (count == NULL)
-		exit(0);
+		return;
 
 	for (i = 0; i <= max; ++i)
 		count[i] = 0;
-	count[max + 1] = '\0';
 
 	for (i = 0; i < (int)size; i++)
 		count[array[i]]++;
@@ -34,7 +36,12 @@ void counting_sort(int *array, size_t size)
 	for (i = 1; i <= max; i++)
 		count[i] = count[i] + count[i - 1];
 	print_array(count, max);
-
+	aux = malloc(size * sizeof(int));
+	if (aux == NULL)
+	{
+		free(count);
+		return;
+	}
 	for (i = size - 1; i >= 0; i--)
 	{
 		aux[count[array[i]] - 1] = array[i];
@@ -43,4 +50,5 @@ void counting_sort(int *array, size_t size)
 	for (i = 0; i < (int)size; i++)
 		array[i] = aux[i];
 	free(count);
+	free(aux);
 }
